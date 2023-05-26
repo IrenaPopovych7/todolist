@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>TodoList</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>My Todo List</h1>
+    </header>
+    <section class="widgit">
+        <div id="forecast" class="forecast-container">
+        </div>
+        <div id="curren_time">
+            <p id="date"></p>
+            <p id="clock">
+            </p>
+        </div>
+    </section>
+    <form id="newListForm">
+        <input type="text" id="newListInput" placeholder="Name of the list">
+        <button type="submit">Create</button>
+        <div id="listsContainer">
+            <select class="select" id="todo-select">
+
+            </select>
+        </div>
+        </section>
+    </form>
+
+    <form>
+        <input type="text" class="todo-input" placeholder="New todo"/>
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="select" id="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
